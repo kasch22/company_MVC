@@ -1,0 +1,18 @@
+.admin-navbar{
+    background: rgb(150, 200, 245);
+}
+
+/*
+.link-right{
+    text-align: right;
+}
+
+.link-left{
+    text-align: left;
+}
+*/
+
+
+.error-message{
+    background-color: #d9534f;
+}

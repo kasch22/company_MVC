@@ -1,0 +1,58 @@
+/////////READ ME//////////
+
+Last updated -  March 31st 2016
+
+
+This Document outlines the scope of the project and notes for improvments
+
+Index:-
+	- Scope
+	- System Notes
+	- Developer notes
+
+
+// Scope - Module 'Software Development'
+
+	The Scope of this porject is to design and build a prototype web app for the Choosen Organisation. The project should be structured for code reusbaility and easy outsider undertanding.
+
+	The system must:-
+		- Display Compnay Products, Projects and Applications information
+		- Allow for editing of Information and content
+		- Allow for the addition and removal of products, applications and projects data.
+
+_______________________
+
+
+// System Notes
+
+	Notes
+
+	- Project has been Developed using PHP, OO practices and the MVC Pattern
+	- The Data Layer uses MySQL
+
+	Functionality
+	 
+	 - CRUD functions for Products, Applications and Projects complete
+	 - Image uploading and Deleting complete
+	 - MVC pattern uses [controller] [method] [params] routing found in App.php class
+
+_______________________
+
+
+// Developer Notes
+
+	Post Deadline Notes - 31/03/2016
+
+		- Early models such as 'ProductsModel.php' need to be written to increase security against SQL injection 
+			- For examples of more see 'Delete' methods in the 'AdmineProjects.php', 'AdminProducts.php' and 'AdmineApplications.php' Classes
+		- Early Models should also be written to use proper Get and Set Methods see 'ApplicationModel.php' and 'EditApplicationModel.php' classes for examples.
+		- Front End has not been developed beyond what was required to develop backend testing
+
+
+	Future Improvments
+		- Some models need to be updated to protect against SLQ injection
+		- App.php Code should be refactored and simplified 
+		- Model Classes could be considlated for simplicity
+		- DB Class needs to be refractored, some functions are duplicated
+		- sainitzing function needs to be added to all out put in views.
+		- Change Property Visibility in Models to private and protected respectively, all currently public, this is unsecure and bad practice
